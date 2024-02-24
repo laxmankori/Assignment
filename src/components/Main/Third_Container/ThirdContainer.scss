@@ -1,0 +1,268 @@
+// / **************************Mixin-start******************************
+
+@mixin div-center($align, $item) {
+    display: flex;
+    justify-content: $align;
+    align-items: $item;
+    align-items: $item;
+}
+
+
+// / **************************Mixin-end******************************
+
+
+.plans {
+    width: 100%;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 0;
+    position: relative;
+
+    &::before {
+        content: "1";
+        width: 44px;
+        height: 44px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        @include div-center(center, center);
+        color: #626E79;
+        position: absolute;
+        left: -25px;
+        top: 25px;
+        border: 1px solid #E1E4E6;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .best_plan {
+        width: 136px;
+        height: 34px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #FF7724;
+        position: absolute;
+        top: -18px;
+        left: -6px;
+        gap: 0.5vw;
+        @include div-center(center, center);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: #FFFFFF;
+
+
+    }
+
+    .plan_img {
+        @include div-center(center, center);
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .plan_content {
+        margin: auto 0;
+
+        h6 {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            color: black;
+            width: 490px;
+            padding: 6px 0;
+
+            span {
+                color:
+                    #4B5665;
+                font-weight: 400;
+            }
+        }
+
+        p {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 483px;
+            color:
+                #4B5665;
+            margin-left: 20px;
+        }
+
+        .showMore {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:
+                #1B88F4;
+            @include div-center(left, center);
+            margin: 1vw 0;
+            gap: 0.5vw;
+            cursor: pointer;
+        }
+
+        .highlight_options {
+            width: 505px;
+            height: 116px;
+            border-radius: 12px;
+            background-color:
+                #FFF4ED;
+            padding: 0.5vw;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5vw;
+            margin: 1vw;
+
+            div {
+                display: flex;
+
+
+                .highlight_num {
+                    width: 40px;
+                    height: 28px;
+                    border-radius: 4px;
+                    background-color: #FFFFFF;
+                    @include div-center(center, center);
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    color:
+                        #1B88F4;
+                }
+            }
+
+
+        }
+        .weloveit{
+            h1{
+                font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+color: 
+#2C384A;
+padding: 1vw 0;
+            }
+            .loveitcontent{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5vw;
+                div{
+                    display: flex;
+                    gap: 0.5vw;
+                    font-family: Inter;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+color: #4B5665;
+
+
+                    .lovecircle{
+
+                        width: 21.75px;
+                        height: 21.75px;
+                        background-color: 
+                        #EBF5FF;
+                        @include div-center(center,center );
+                        border-radius: 50%;
+                    } 
+
+                }
+            }
+        }
+    }
+
+    .rating {
+        width: 135px;
+        height: 118px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: #F3F9FF;
+        @include div-center(center, center);
+        flex-direction: column;
+        gap: 0.5vw;
+    }
+
+    .view {
+        button {
+            width: 232px;
+            height: 48px;
+            border-radius: 12px;
+            background-color: #1B88F4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .plan_reting {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4vw;
+        margin-bottom: 1vw;
+
+        .rating {
+
+            h1 {
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 48px;
+                letter-spacing: 0em;
+                color: #074786;
+
+            }
+
+            p {
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0em;
+                color:
+                    #074786;
+
+            }
+        }
+    }
+}
+
+#plan2 {
+    &::before {
+        content: '2';
+    }
+}
+
+#plan3 {
+    &::before {
+        content: '3';
+    }
+}
+
+#plan4 {
+    &::before {
+        content: '4';
+    }
+}

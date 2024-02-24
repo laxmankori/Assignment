@@ -1,0 +1,46 @@
+
+.signupContainer{
+    width: 1024px;
+height: 171px;
+display: flex;
+margin: 2vw 0;
+padding: 2vw 0;
+justify-content: space-between;
+h1{
+    color: 
+    #5C6874;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    width: 
+    398px;
+}
+
+.search{
+    display: flex;
+    input{
+
+        width: 348px;
+        height: 52px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        background-color: #FFFFFF;
+        border: none;
+        outline: none;
+        padding: 0 1vw;
+    } 
+button{
+    width: 97px;
+height: 52px;
+border-radius: 0px, 12px, 12px, 0px;
+border-bottom-right-radius: 12px;
+border-top-right-radius: 12px;
+background-color: #1B88F4;
+border: none;
+color: white;
+}
+}
+
+}

@@ -1,0 +1,27 @@
+
+// / **************************Mixin-start******************************
+
+@mixin div-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+// / **************************Mixin-end******************************
+
+
+
+
+.container {
+    width: 100%;
+    height: 
+    2347px;
+    @include div-center;
+
+    .main {
+        width: 1024px;
+        height: 155px;
+        padding-top: 2vw;
+
+    }
+        }

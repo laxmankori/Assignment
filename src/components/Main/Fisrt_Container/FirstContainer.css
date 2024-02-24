@@ -1,0 +1,52 @@
+.main_heading h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: #2C384A;
+}
+
+.detail_updates {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1.3px solid #E1E4E6;
+  border-bottom: 1.3px solid #E1E4E6;
+  padding: 0.5vw 0;
+  margin: 1vw 0;
+}
+.detail_updates p {
+  color: #4B5665;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.detail_updates .update .last-update {
+  display: flex;
+  gap: 1.5vw;
+}
+.detail_updates .update .last-update .vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+.detail_updates .update .last-update .vector .vector_circle {
+  width: 1vw;
+  height: 1vw;
+  border: 1px solid #4B5665;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_updates .relevant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_updates .relevant img {
+  cursor: pointer;
+}/*# sourceMappingURL=FirstContainer.css.map */

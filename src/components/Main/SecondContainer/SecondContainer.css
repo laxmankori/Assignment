@@ -1,0 +1,56 @@
+.tool-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3vw;
+  margin: 0 1vw;
+}
+.tool-container .tool-box {
+  width: -moz-max-content;
+  width: max-content;
+  height: 36px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 10px;
+  color: #4B5665;
+}
+
+.location {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 1vw 0;
+  gap: 0.5vw;
+}
+.location p {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.location .home {
+  color: #727D87;
+}
+.location .hostingAll {
+  color: #5C6874;
+}
+.location .hosting {
+  color: #727D87;
+}
+.location .host6 {
+  color: #5C6874;
+}
+.location .host5 {
+  color: #5C6874;
+}/*# sourceMappingURL=SecondContainer.css.map */
