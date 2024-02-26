@@ -125,3 +125,37 @@ margin-top: 1vw;
         }
     }
 }
+
+// / *****************************************************Responsive code start****************************************************
+        
+@media screen and (max-width:426px) {
+    div{
+        .deals-container{
+            flex-direction: column;
+            gap: 5vw;
+            align-items: center;
+            margin: 5vw 0;
+            .deal-box{
+                padding: 2vw;
+                .deal_details{
+                    p{
+                        margin: 3vw 0;
+                    }
+                    .rate{
+                        margin: 3vw 0;
+                    }
+                    .button{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .discount{
+                    margin: 4vw 0;
+                }
+            }
+        }
+    }
+}
+
+
+// / *****************************************************Responsive code start****************************************************

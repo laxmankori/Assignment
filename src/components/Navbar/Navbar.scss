@@ -17,18 +17,37 @@ $nav-text-color: #D1D6DA;
 
 
 // / **************************Mixin-end******************************
-.navbar {
-    width: 100%;
+nav{ 
+    .hambuger_baner{
+        width: 100%;
+        height: 100vh;
+        position: ABSOLUTE;
+        background: $nav-foot-bg-color;
+        z-index: 99;
+        display: none;
+        // top: -704px;
+        // top: 0px;
+    }
+        .mobile_link{
+            display: none;
+        }
+        
+        .navbar {
+        width: 100%;
     height: 64px;
     background-color: $nav-foot-bg-color;
     @include div-center;
     gap: 2vw;
+    
+    i{
+        display: none;
+    }
 
     .search {
-
-            width: 258px;
-            height: 37px;
-            border-radius: 8px;
+        
+        width: 258px;
+        height: 37px;
+        border-radius: 8px;
             border: 1px;
             background: #fff;
             padding: 0 10px;
@@ -43,13 +62,14 @@ $nav-text-color: #D1D6DA;
     width: 90%;
     border: none;
     outline: none;
-            }
-    }
+}
+}
+.navList{
 
     ul {
         display: flex;
         gap: 3vw;
-
+        
         li {
             display: flex;
             color: $nav-text-color;
@@ -65,3 +85,56 @@ $nav-text-color: #D1D6DA;
         }
     }
 }
+}
+}
+
+
+// *****************************************************Responsive code start****************************************************
+
+@media screen and (max-width:426px) {
+    nav{
+        .navbar{
+            justify-content: space-around;
+            width: 100vw;
+        i{
+            display: block;
+            color: white;
+            font-size: 7.5vw;
+        }
+        .navList{
+            position: absolute;
+    top: 224px;
+    display: block;
+    z-index: 999;
+
+            ul{
+                // display: flex;
+                flex-direction: column;
+                gap: 7vw;
+                display: none;
+                .padding-left{
+                    padding-left: 0px;
+                }
+                li{
+                    padding: 5vw 0;
+                    font-size: 6vw;
+                }
+            }
+        }
+        .hambuger{
+            display: block;
+            z-index: 999;
+        }
+
+    }
+
+}
+    
+}
+
+
+.block{
+    display: block;
+}
+
+// *****************************************************Responsive end start****************************************************

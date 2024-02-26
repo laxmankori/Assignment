@@ -79,3 +79,43 @@ letter-spacing: 0em;
             }
         }
 
+// / *****************************************************Responsive code start****************************************************
+        
+@media screen and (max-width:426px) {
+    .main_heading {
+
+        h1 {
+            font-size: 45px;
+        }
+    }
+    .detail_updates{
+        flex-direction: column;
+        align-items: baseline;
+        padding: 3vw;
+        gap: 1vw;
+        .relevant{
+            flex-direction: column;
+        }
+        .update{
+                
+            .last-update{
+                flex-direction: column;
+                align-items: baseline;
+                .vector{
+                    gap: 1.5vw;
+                    .vector_circle{
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                }
+            }
+        }
+        .relevant{
+            padding: 1vw 4vw;
+        }
+
+    }
+}
+
+
+// / *****************************************************Responsive code start****************************************************

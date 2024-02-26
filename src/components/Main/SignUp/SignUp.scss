@@ -44,3 +44,23 @@ color: white;
 }
 
 }
+
+
+
+// / *****************************************************Responsive code start****************************************************
+        
+@media screen and (max-width:426px) {
+    .signupContainer{
+        width: 90vw;
+        flex-direction: column;
+        .search{
+            justify-content: center;
+            input{
+                width: 270px;
+            }
+        }
+    }
+}
+
+
+// / *****************************************************Responsive code start****************************************************

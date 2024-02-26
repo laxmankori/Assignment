@@ -266,3 +266,48 @@ color: #4B5665;
         content: '4';
     }
 }
+
+// / *****************************************************Responsive code start****************************************************
+        
+@media screen and (max-width:426px) {
+    .plans_container{
+        @include div-center(center, center);
+        flex-direction: column;
+        .plans {
+            margin: 10vw 0;
+            flex-direction: column;
+            width: 80vw;
+            padding: 7vw;
+            .plan_content{
+                h6 , p{
+                    font-size: 15px;
+                    width: 60vw;
+                }
+            }
+            .plan_reting{
+margin: 1vw 0;
+                .rating{
+                    border-radius: 12px;
+                }
+            } 
+            .plan_content{
+                .highlight_options{
+                    width: 65vw;
+                    justify-content: center;
+                    padding: 0 3vw;
+                }
+                .weloveit{
+                    .loveitcontent{
+                        gap: 2vw;
+                        div{
+                            gap: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+ 
+ 
+ // / *****************************************************Responsive code start****************************************************

@@ -61,3 +61,17 @@ text-align: left;
         color: #5C6874;
     }
 }
+// / *****************************************************Responsive code start****************************************************
+        
+@media screen and (max-width:426px) {
+   .tool-container{
+    flex-direction: column;
+    gap: 2vw;
+   }
+   .location{
+    margin: 4vw 0 4vw 0;
+   }
+}
+
+
+// / *****************************************************Responsive code start****************************************************
